@@ -21,10 +21,88 @@ doc = nlp(text)
 
 for token in doc:
     print(token.text, token.lemma_, token.pos_, token.is_stop)
+for sent in enumerate(doc.sents):
+    print(sent)
+from nltk import tokenize
+tokenize.sent_tokenize(text)
+import re
+telephone=re.findall("(\d{4}\d{3}\d{3}\s)", text)[0].strip()
+postalcodesender=re.findall("\s\d{6}\s", text)[0].strip()
+CIF=re.findall("[A-Z][A-Z]\d{6,10}\s", text)[0].strip()
+code=re.findall("\s\d{5}\s", text)[0].strip()
+numepersoana=re.findall("([A-Z\-]{4,})\s+([A-Z\-]{5,})??\s?([A-Z\-]{5,})", text)
+numepersoana
+perioadafacturare=re.findall("[0-9]{2}\.[0-9]{2}\.[0-9]{4}\-[0-9]{2}\.[0-9]{2}\.[0-9]{4}", text)[0].strip()
+datafacturare=re.findall("\Data facturării\:\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})", text)[0].strip()
+duedate=re.findall("Total de plată pană la\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})", text)[0].strip()
+IBAN=re.findall("\s[A-Z]{2}[0-9]{2}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s", text)
+IBAN2=IBAN[1].strip()
+codfacturare=re.findall("[0-9]{14}", text)[0]
+
+import unicodedata
+textwithoutdiacritics=unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode('utf8')
+textwithoutdiacritics
+
+abbreviations = {'nr.': 'Numar',
+                 'Et.': 'Etaj',
+                 'Contab.': 'Contabilitate',
+                 'Publ.': 'Publica',
+                 'Activ.': 'Activitate',
+                 'Nr.': 'Numar',
+                 'Sc.': 'Scara',
+                 'Ap.': 'Apartament',
+                 'Jud.': 'Judet'}
+terminators = ['.', '!', '?', ';', telephone, postalcodesender, CIF, code, IBAN2, perioadafacturare, datafacturare]
+wrappers = ['"', "'", ')', ']', '}', ':']
+    
+def find_sentences(paragraph):
+   end = True
+   sentences = []
+   while end > -1:
+       end = find_sentence_end(paragraph)
+       if end > -1:
+           sentences.append(paragraph[end:].strip())
+           paragraph = paragraph[:end]
+   sentences.append(paragraph)
+   sentences.reverse()
+   return sentences
+
+def find_sentence_end(paragraph):
+    [possible_endings, contraction_locations] = [[], []]
+    contractions = abbreviations.keys()
+    sentence_terminators = terminators + [terminator + wrapper for wrapper in wrappers for terminator in terminators]
+    for sentence_terminator in sentence_terminators:
+        t_indices = list(find_all(paragraph, sentence_terminator))
+        possible_endings.extend(([] if not len(t_indices) else [[i, len(sentence_terminator)] for i in t_indices]))
+    for contraction in contractions:
+        c_indices = list(find_all(paragraph, contraction))
+        contraction_locations.extend(([] if not len(c_indices) else [i + len(contraction) for i in c_indices]))
+    possible_endings = [pe for pe in possible_endings if pe[0] + pe[1] not in contraction_locations]
+    if len(paragraph) in [pe[0] + pe[1] for pe in possible_endings]:
+        max_end_start = max([pe[0] for pe in possible_endings])
+        possible_endings = [pe for pe in possible_endings if pe[0] != max_end_start]
+    possible_endings = [pe[0] + pe[1] for pe in possible_endings if sum(pe) > len(paragraph) or (sum(pe) < len(paragraph) and paragraph[sum(pe)] == ' ')]
+    end = (-1 if not len(possible_endings) else max(possible_endings))
+    return end
+
+def find_all(a_str, sub):
+    start = 0
+    while True:
+        start = a_str.find(sub, start)
+        if start == -1:
+            return
+        yield start
+        start += len(sub)
+
+sentences=find_sentences(text)
+
+for chunk in doc.noun_chunks:
+    print(chunk.text, chunk.root.text, chunk.root.dep_,
+            chunk.root.head.text)
     
 from sentence_splitter import SentenceSplitter, split_text_into_sentences
 splitter = SentenceSplitter(language='ro', non_breaking_prefix_file='D:/BusuiocI/Downloads/ro.txt')
-sentences=splitter.split(text=text)
+sentences=splitter.split(text=textwithoutdiacritics)
 sentences2=split_text_into_sentences(
     text=text,
     language='ro',
@@ -45,8 +123,11 @@ for i in range(len(sentences)):
     doc=nlp(sentences[i])
     for ent in doc.ents:
         print(ent.text, ent.label_)
+html=[]
 
+doc=nlp(sentences[5])
 html=displacy.render(doc, style="ent",jupyter=False) #NER
+
 html #View in HTML Viewer
 
 # Write a function to display basic entity info:
@@ -62,6 +143,13 @@ sent = preprocess(text)
 fd = nltk.FreqDist(sent)
 most_freq_words = fd.most_common(100)
 print(most_freq_words)
+
+from collections import Counter
+words = [token.text for token in doc
+          if not token.is_stop and not token.is_punct]
+word_freq = Counter(words)
+common_words = word_freq.most_common(5)
+print (common_words)
   
 def preprocess(sent):
     sent = nltk.word_tokenize(sent)
@@ -138,5 +226,18 @@ from wordcloud import WordCloud
 wordcloud = WordCloud(background_color="white", max_words=5000, contour_width=3, contour_color='steelblue')
 wordcloud.generate(text)
 wordcloud.to_image()
+
+from spacy.matcher import Matcher
+matcher = Matcher(nlp.vocab)
+def extract_full_name(nlp_doc):
+   pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
+   matcher.add('FULL_NAME', None, pattern)
+   matches = matcher(nlp_doc)
+   for match_id, start, end in matches:
+       span = nlp_doc[start:end]
+       return span.text
+extract_full_name(doc)
+
+
 
 
