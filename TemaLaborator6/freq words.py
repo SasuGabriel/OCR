@@ -33,4 +33,4 @@ word_freq  = nltk.FreqDist(words)
 common_words = word_freq.most_common(1000)
 print (common_words)
 import numpy as np
-np.savetxt("D:/BusuiocI/Downloads/common_words.csv", common_words, delimiter=",", fmt='%s', encoding='UTF-8') #trebuie deschis cu Notepad csv-ul din cauza encoding-ului.
+np.savetxt("D:/BusuiocI/Downloads/common_words.txt", common_words, delimiter=",", fmt='%s', encoding='UTF-8') #trebuie deschis cu Notepad txt-ul, din cauza encoding-ului.
