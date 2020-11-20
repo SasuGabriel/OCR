@@ -12,8 +12,6 @@ tree1 = ET.parse('D:/BusuiocI/Downloads/Camil Petrescu - Ultima noapte de dragos
 root1 = tree1.getroot()
 
 postag=[]
-from nltk.tokenize import RegexpTokenizer
-tokenizer=RegexpTokenizer(r'\w+')
 for dict1 in root1.iter('word'):
     postag.append(dict1.get("postag"))
         
