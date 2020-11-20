@@ -23,12 +23,12 @@ stop_words = set(stopwords.words('romanian'))  # nltk stopwords list
 tokenizer=RegexpTokenizer(r'\w+') 
 for child in root.iter('word'): #Parcurgem nodurile arborelui
     token=tokenizer.tokenize(child.get("form")) #Tokenizam folosind functia tokenize
-    #In cazul in care tokenul rezultat nu este o lista goala, vom afisa cuvantul si lemma
+    #Eliminam tokenurile care sunt stopwords
     if (len(token)!=0 and token[0] not in stop_words): 
-        #print("Word: ", token, ", Lemma: ", child.get("lemma"))
         tokens.append(token)
 words = [w for doc in tokens for w in doc]
 import nltk
 word_freq  = nltk.FreqDist(words)
+#Printam cele mai frecvente 1000 de cuvinte.
 common_words = word_freq.most_common(1000)
 print (common_words)
