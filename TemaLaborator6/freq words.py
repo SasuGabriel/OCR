@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 20 09:16:45 2020
+
+@author: Busuioci
+"""
+
+#Importam modulul xml.etree.ElementTree pentru a reprezenta fisierul XML 
+#sub forma unui arbore cu noduri
+import xml.etree.ElementTree as ET
+#Parsam fisierul XML si il salvam ca arbore in variabila tree
+tree = ET.parse('D:/BusuiocI/Downloads/Camil Petrescu - Ultima noapte de dragoste, intaia noapte de razboi_Parser.xml')
+#Salvam radacina arborelui in variabila root
+root = tree.getroot()
+
+#Pentru a elimina semnele de punctuatie, folosim functia RegexpTokenizer
+#din pachetul nltk.tokenize
+from nltk.tokenize import RegexpTokenizer
+#Omitem semnele de punctuatie
+tokens=[]
+from nltk.corpus import stopwords
+stop_words = set(stopwords.words('romanian'))  # nltk stopwords list
+tokenizer=RegexpTokenizer(r'\w+') 
+for child in root.iter('word'): #Parcurgem nodurile arborelui
+    token=tokenizer.tokenize(child.get("form")) #Tokenizam folosind functia tokenize
+    #In cazul in care tokenul rezultat nu este o lista goala, vom afisa cuvantul si lemma
+    if (len(token)!=0 and token[0] not in stop_words): 
+        #print("Word: ", token, ", Lemma: ", child.get("lemma"))
+        tokens.append(token)
+words = [w for doc in tokens for w in doc]
+import nltk
+word_freq  = nltk.FreqDist(words)
+common_words = word_freq.most_common(1000)
+print (common_words)
