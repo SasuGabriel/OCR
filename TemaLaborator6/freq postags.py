@@ -20,5 +20,5 @@ import nltk
 word_freq  = nltk.FreqDist(words)
 common_postags = word_freq.most_common(1000)
 print (common_postags)
-
-
+import numpy as np
+np.savetxt("D:/BusuiocI/Downloads/common_postags.csv", common_postags, delimiter=",", fmt='%s')
