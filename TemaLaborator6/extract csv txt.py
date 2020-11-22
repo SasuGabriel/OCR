@@ -62,3 +62,7 @@ import csv
 with open("D:/BusuiocI/Downloads/lemmaandpostags.txt", "w", newline='', encoding='utf-8') as f:
     writer = csv.writer(f, delimiter='-')
     writer.writerows(result2)
+    
+import csv
+with open("D:/BusuiocI/Downloads/lemmas.txt", "w", newline='', encoding='utf-8') as f:
+    f.writelines('\n'.join(lemma))
