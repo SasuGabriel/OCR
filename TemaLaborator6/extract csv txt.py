@@ -12,8 +12,8 @@ tree1 = ET.parse('D:/BusuiocI/Downloads/Camil Petrescu - Ultima noapte de dragos
 root1 = tree1.getroot()
 
 #Returnam specificatiile morfosintactice 
-for dict1 in root1.iter('word'):
-    print(dict1.get("form"),"Part of speech: "+ dict1.get("postag"), sep=",")
+#for dict1 in root1.iter('word'):
+#    print(dict1.get("form"),"Part of speech: "+ dict1.get("postag"), sep=",")
     
 #Returnam specificatiile morfosintactice dupa tokenizare (se elimina semnele de punctuatie)
 from nltk.tokenize import RegexpTokenizer
@@ -23,7 +23,7 @@ postags=[]
 
 for dict1 in root1.iter('word'):
     tokens=tokenizer.tokenize(dict1.get("form"))
-    print(tokens, "Part of speech: "+ dict1.get("postag"), sep=",")
+    #print(tokens, "Part of speech: "+ dict1.get("postag"), sep=",")
     tokenuri.append(tokens)
     postags.append(dict1.get("postag"))
 tokensandpostags=list(zip(tokenuri, postags))
@@ -46,13 +46,13 @@ tree2 = ET.parse('D:/BusuiocI/Downloads/Camil Petrescu - Ultima noapte de dragos
 root2 = tree2.getroot()
  
 #Printam obiectele din dictionar:
-for dict2 in root2.iter('W'):
-    print(dict2.items())
+#for dict2 in root2.iter('W'):
+#    print(dict2.items())
 lemma=[]
 postags=[]
 #Printam lemma si partea de vorbire 
 for dict2 in root2.iter('W'):
-    print(dict2.get("LEMMA"), " - Part of speech: ", dict2.get("POS"))
+    #print(dict2.get("LEMMA"), " - Part of speech: ", dict2.get("POS"))
     lemma.append(dict2.get("LEMMA"))
     postags.append(dict2.get("POS"))
 lemmaandpostag=list(zip(lemma, postags))
@@ -62,5 +62,3 @@ import csv
 with open("D:/BusuiocI/Downloads/lemmaandpostags.txt", "w", newline='', encoding='utf-8') as f:
     writer = csv.writer(f, delimiter='-')
     writer.writerows(result2)
-
-
