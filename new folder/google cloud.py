@@ -9,6 +9,10 @@ with open('D:/BusuiocI/Desktop/request.json', encoding='utf-8') as f:
   data = json.load(f)
 text=data['fullTextAnnotation']['text'].replace('\n',' ')
 
+dataFile = open('inputfactura.txt', 'w', encoding='utf-8')
+dataFile.write(text)
+dataFile.close() 
+
 #pip install spacy
 import spacy
 from spacy import displacy
