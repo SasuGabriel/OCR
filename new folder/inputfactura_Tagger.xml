@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS_Output>
+  <S id="1" offset="0">
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="romtelecom" MSD="Npmsry" Number="singular" POS="NOUN" Type="proper" id="1.1" offset="0">ROMTELECOM</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="factură" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.2" offset="11">FACTURA</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="SEGISTE" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="1.3" offset="19">SEGISTE</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="masculine" LEMMA="HILO" MSD="Npmprn" Number="plural" POS="NOUN" Type="proper" id="1.4" offset="27">HILO</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="factură" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.5" offset="32">FACTURA</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="serie" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.6" offset="40">Seria</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="RTGK" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="1.7" offset="46">RTGK</W>
+    <W LEMMA="numar" MSD="Y" POS="ABBREVIATION" id="1.8" offset="51">nr.</W>
+    <W EXTRA="NotInDict" LEMMA="4921761" MSD="M" POS="NUMERAL" id="1.9" offset="55">4921761</W>
+    <W LEMMA="Sic" MSD="Np" POS="NOUN" Type="proper" id="1.10" offset="63">Sic</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="romtelecom" MSD="Npmsry" Number="singular" POS="NOUN" Type="proper" id="1.11" offset="67">ROMTELECOM</W>
+    <W EXTRA="NotInDict" LEMMA="S.A." MSD="Np" POS="NOUN" Type="proper" id="1.12" offset="78">S.A.</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="piață" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.13" offset="83">Piaţa</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="presă" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="1.14" offset="89">Presei</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="liber" MSD="Npfpry" Number="plural" POS="NOUN" Type="proper" id="1.15" offset="96">Libere</W>
+    <W LEMMA="numar" MSD="Y" POS="ABBREVIATION" id="1.16" offset="103">nr.</W>
+    <W EXTRA="NotInDict" LEMMA="3" MSD="M" POS="NUMERAL" id="1.17" offset="107">3</W>
+    <W EXTRA="NotInDict" LEMMA="-5" MSD="M" POS="NUMERAL" id="1.18" offset="108">-5</W>
+    <W LEMMA="," MSD="COMMA" id="1.19" offset="110">,</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="City" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.20" offset="112">City</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="Gate" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="1.21" offset="117">Gate</W>
+    <W LEMMA="," MSD="COMMA" id="1.22" offset="121">,</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="turn" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="1.23" offset="123">Turnul</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="1.24" offset="130">de</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="nord" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="1.25" offset="133">Nord</W>
+    <W LEMMA="," MSD="COMMA" id="1.26" offset="137">,</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="Et." MSD="Npfpon" Number="plural" POS="NOUN" Type="proper" id="1.27" offset="139">Et.</W>
+    <W EXTRA="NotInDict" LEMMA="7" MSD="M" POS="NUMERAL" id="1.28" offset="143">7</W>
+    <W EXTRA="NotInDict" LEMMA="-18" MSD="M" POS="NUMERAL" id="1.29" offset="144">-18</W>
+    <W LEMMA="," MSD="COMMA" id="1.30" offset="147">,</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="S1" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="1.31" offset="149">S1</W>
+    <W LEMMA="," MSD="COMMA" id="1.32" offset="151">,</W>
+    <W LEMMA="bucurești" MSD="Np" POS="NOUN" Type="proper" id="1.33" offset="153">Bucureşti</W>
+    <W LEMMA="," MSD="COMMA" id="1.34" offset="162">,</W>
+    <W EXTRA="NotInDict" LEMMA="013702" MSD="M" POS="NUMERAL" id="1.35" offset="164">013702</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="număr" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="1.36" offset="171">Număr</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="telefon" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="1.37" offset="177">telefon</W>
+    <W LEMMA="/" MSD="SLASH" id="1.38" offset="184">/</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="cont" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="1.39" offset="185">cont</W>
+    <W LEMMA=":" MSD="COLON" id="1.40" offset="189">:</W>
+    <W EXTRA="NotInDict" LEMMA="0232275242" MSD="M" POS="NUMERAL" id="1.41" offset="191">0232275242</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="RC" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="1.42" offset="202">RC</W>
+    <W LEMMA=":" MSD="COLON" id="1.43" offset="204">:</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="J40" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="1.44" offset="206">J40</W>
+    <W LEMMA="/" MSD="SLASH" id="1.45" offset="209">/</W>
+    <W EXTRA="NotInDict" LEMMA="8926" MSD="M" POS="NUMERAL" id="1.46" offset="210">8926</W>
+    <W LEMMA="/" MSD="SLASH" id="1.47" offset="214">/</W>
+    <W EXTRA="NotInDict" LEMMA="1997" MSD="M" POS="NUMERAL" id="1.48" offset="215">1997</W>
+    <W LEMMA=";" MSD="SCOLON" id="1.49" offset="219">;</W>
+  </S>
+  <S id="2" offset="221">
+    <W LEMMA="cif" MSD="Np" POS="NOUN" Type="proper" id="2.1" offset="0">CIF</W>
+    <W LEMMA=":" MSD="COLON" id="2.2" offset="3">:</W>
+    <W EXTRA="NotInDict" LEMMA="RO427320" MSD="Np" POS="NOUN" Type="proper" id="2.3" offset="5">RO427320</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="cod" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="2.4" offset="14">Cod</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="facturare" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="2.5" offset="18">facturare</W>
+    <W LEMMA=":" MSD="COLON" id="2.6" offset="27">:</W>
+    <W EXTRA="NotInDict" LEMMA="42466001402143" MSD="M" POS="NUMERAL" id="2.7" offset="29">42466001402143</W>
+    <W EXTRA="NotInDict" LEMMA="CSSV" MSD="Np" POS="NOUN" Type="proper" id="2.8" offset="44">CSSV</W>
+    <W LEMMA=":" MSD="COLON" id="2.9" offset="48">:</W>
+    <W EXTRA="NotInDict" LEMMA="318.464.490" MSD="M" POS="NUMERAL" id="2.10" offset="50">318.464.490</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="leu" MSD="Npmpon" Number="plural" POS="NOUN" Type="proper" id="2.11" offset="62">Lei</W>
+    <W LEMMA="Banca" MSD="Np" POS="NOUN" Type="proper" id="2.12" offset="66">Banca</W>
+    <W LEMMA=":" MSD="COLON" id="2.13" offset="71">:</W>
+    <W LEMMA="banc" MSD="Np" POS="NOUN" Type="proper" id="2.14" offset="73">BANC</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="post" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="2.15" offset="78">POST</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="reprezentantă" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="2.16" offset="83">REPREZENTANTA</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="cod" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="2.17" offset="97">Cod</W>
+    <W EXTRA="NotInDict" LEMMA="IBAN" MSD="Np" POS="NOUN" Type="proper" id="2.18" offset="101">IBAN</W>
+    <W LEMMA=":" MSD="COLON" id="2.19" offset="105">:</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="RO06" MSD="Npfsrn" Number="singular" POS="NOUN" Type="proper" id="2.20" offset="107">RO06</W>
+    <W EXTRA="NotInDict" LEMMA="BPOS" MSD="Np" POS="NOUN" Type="proper" id="2.21" offset="112">BPOS</W>
+    <W EXTRA="NotInDict" LEMMA="8500" MSD="M" POS="NUMERAL" id="2.22" offset="117">8500</W>
+    <W EXTRA="NotInDict" LEMMA="2717" MSD="M" POS="NUMERAL" id="2.23" offset="122">2717</W>
+    <W EXTRA="NotInDict" LEMMA="789R" MSD="M" POS="NUMERAL" id="2.24" offset="127">789R</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="OL01" MSD="Npfsrn" Number="singular" POS="NOUN" Type="proper" id="2.25" offset="132">OL01</W>
+    <W LEMMA="Banca" MSD="Np" POS="NOUN" Type="proper" id="2.26" offset="137">Banca</W>
+    <W LEMMA=":" MSD="COLON" id="2.27" offset="142">:</W>
+    <W EXTRA="NotInDict" LEMMA="DGFPMB" MSD="Np" POS="NOUN" Type="proper" id="2.28" offset="144">DGFPMB</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="activ" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="2.29" offset="151">Activ</W>
+    <W LEMMA="." MSD="PERIOD" id="2.30" offset="156">.</W>
+  </S>
+  <S id="3" offset="379">
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="3.1" offset="0">de</W>
+    <W EXTRA="NotInDict" LEMMA="Trez" MSD="Np" POS="NOUN" Type="proper" id="3.2" offset="3">Trez</W>
+    <W LEMMA="," MSD="COMMA" id="3.3" offset="7">,</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="3.4" offset="9">si</W>
+    <W EXTRA="NotInDict" LEMMA="Contab" MSD="Np" POS="NOUN" Type="proper" id="3.5" offset="12">Contab</W>
+    <W LEMMA="." MSD="PERIOD" id="3.6" offset="18">.</W>
+  </S>
+  <S id="4" offset="399">
+    <W EXTRA="NotInDict" LEMMA="Publ" MSD="Rg" POS="ADVERB" id="4.1" offset="0">Publ</W>
+    <W LEMMA="." MSD="PERIOD" id="4.2" offset="4">.</W>
+  </S>
+  <S id="5" offset="405">
+    <W LEMMA="bucurești" MSD="Np" POS="NOUN" Type="proper" id="5.1" offset="0">Bucureşti</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="cod" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.2" offset="10">Cod</W>
+    <W EXTRA="NotInDict" LEMMA="IBAN" MSD="Np" POS="NOUN" Type="proper" id="5.3" offset="14">IBAN</W>
+    <W LEMMA=":" MSD="COLON" id="5.4" offset="18">:</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="RO82" MSD="Npfpry" Number="plural" POS="NOUN" Type="proper" id="5.5" offset="20">RO82</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="TREZ" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="5.6" offset="25">TREZ</W>
+    <W EXTRA="NotInDict" LEMMA="7005" MSD="M" POS="NUMERAL" id="5.7" offset="30">7005</W>
+    <W EXTRA="NotInDict" LEMMA="069X" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="5.8" offset="35">069X</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="XXOO" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="5.9" offset="40">XXOO</W>
+    <W EXTRA="NotInDict" LEMMA="0532" MSD="M" POS="NUMERAL" id="5.10" offset="45">0532</W>
+    <W LEMMA="petrica" MSD="Np" POS="NOUN" Type="proper" id="5.11" offset="50">PETRICA</W>
+    <W LEMMA="busuioc" MSD="Np" POS="NOUN" Type="proper" id="5.12" offset="58">BUSUIOC</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="perioadă" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="5.13" offset="66">Perioada</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.14" offset="75">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="facturare" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.15" offset="78">facturare</W>
+    <W LEMMA=":" MSD="COLON" id="5.16" offset="87">:</W>
+    <W EXTRA="NotInDict" LEMMA="22.12.2010-21.01.2011" MSD="M" POS="NUMERAL" id="5.17" offset="89">22.12.2010-21.01.2011</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="Şos" MSD="Npfprn" Number="plural" POS="NOUN" Type="proper" id="5.18" offset="111">Şos</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="național" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="5.19" offset="115">Nationala</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="Nr." MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="5.20" offset="125">Nr.</W>
+    <W EXTRA="NotInDict" LEMMA="46A" MSD="Rg" POS="ADVERB" id="5.21" offset="129">46A</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="BI" MSD="Npfprn" Number="plural" POS="NOUN" Type="proper" id="5.22" offset="133">BI</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="D5" MSD="Npfprn" Number="plural" POS="NOUN" Type="proper" id="5.23" offset="136">D5</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="Sc." MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="5.24" offset="139">Sc.</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="d" MSD="Npmprn" Number="plural" POS="NOUN" Type="proper" id="5.25" offset="143">D</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="Et." MSD="Npfpon" Number="plural" POS="NOUN" Type="proper" id="5.26" offset="145">Et.</W>
+    <W EXTRA="NotInDict" LEMMA="7" MSD="M" POS="NUMERAL" id="5.27" offset="149">7</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="Ap." MSD="Npfsrn" Number="singular" POS="NOUN" Type="proper" id="5.28" offset="151">Ap.</W>
+    <W EXTRA="NotInDict" LEMMA="4" MSD="M" POS="NUMERAL" id="5.29" offset="155">4</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="dat" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="5.30" offset="157">Data</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="facturare" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="5.31" offset="162">facturării</W>
+    <W LEMMA=":" MSD="COLON" id="5.32" offset="172">:</W>
+    <W EXTRA="NotInDict" LEMMA="22.01.2011" MSD="M" POS="NUMERAL" id="5.33" offset="174">22.01.2011</W>
+    <W EXTRA="NotInDict" LEMMA="700606" MSD="M" POS="NUMERAL" id="5.34" offset="185">700606</W>
+    <W EXTRA="tranzitiv" LEMMA="lăsa" MSD="Vmip2s" Mood="indicative" Number="singular" POS="VERB" Person="second" Tense="present" Type="predicative" id="5.35" offset="192">laşi</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="curs" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.36" offset="197">Curs</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.37" offset="202">de</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="schimb" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="5.38" offset="205">schimb</W>
+    <W LEMMA=":" MSD="COLON" id="5.39" offset="211">:</W>
+    <W EXTRA="NotInDict" LEMMA="4,2901" MSD="Sp" POS="ADPOSITION" id="5.40" offset="213">4,2901</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="leu" MSD="Npmpon" Number="plural" POS="NOUN" Type="proper" id="5.41" offset="220">Lei</W>
+    <W LEMMA="/" MSD="SLASH" id="5.42" offset="223">/</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="masculine" LEMMA="EUR" MSD="Npmprn" Number="plural" POS="NOUN" Type="proper" id="5.43" offset="224">EUR</W>
+    <W EXTRA="PropperNameCaseOverride" LEMMA="Jud." MSD="Np" POS="NOUN" Type="proper" id="5.44" offset="228">Jud.</W>
+    <W LEMMA="Iași" MSD="Np" POS="NOUN" Type="proper" id="5.45" offset="233">Iaşi</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="curs" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.46" offset="238">Curs</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="masculine" LEMMA="BNR" MSD="Npmprn" Number="plural" POS="NOUN" Type="proper" id="5.47" offset="243">BNR</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="valabil" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="5.48" offset="247">valabil</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="5.49" offset="255">in</W>
+    <W Case="direct" Definiteness="yes" Form="letter" Gender="feminine" LEMMA="prim" MSD="Mofsrly" Number="singular" POS="NUMERAL" Type="ordinal" id="5.50" offset="258">prima</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="zi" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.51" offset="264">zi</W>
+    <W Case="direct" Gender="feminine" LEMMA="al" MSD="Tsfsr" Number="singular" POS="ARTICLE" Type="possessive" id="5.52" offset="267">a</W>
+    <W Case="oblique" Definiteness="yes" Gender="feminine" LEMMA="perioadă" MSD="Ncfsoy" Number="singular" POS="NOUN" Type="common" id="5.53" offset="269">perioadei</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.54" offset="279">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="facturare" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.55" offset="282">facturare</W>
+    <W EXTRA="NotInDict" LEMMA="072095" MSD="M" POS="NUMERAL" id="5.56" offset="292">072095</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="PISOF_1511__00880606" MSD="Npfprn" Number="plural" POS="NOUN" Type="proper" id="5.57" offset="299">PISOF_1511__00880606</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="leu" MSD="Npmpon" Number="plural" POS="NOUN" Type="proper" id="5.58" offset="320">LEI</W>
+    <W EXTRA="NotInDict" LEMMA="33,46" MSD="Vmip2s" Mood="indicative" Number="singular" POS="VERB" Person="second" Tense="present" Type="predicative" id="5.59" offset="324">33,46</W>
+    <W EXTRA="NotInDict" LEMMA="000131126586" MSD="M" POS="NUMERAL" id="5.60" offset="330">000131126586</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="abonament" MSD="Npfpoy" Number="plural" POS="NOUN" Type="proper" id="5.61" offset="343">Abonamente</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="abonament" MSD="Npfpoy" Number="plural" POS="NOUN" Type="proper" id="5.62" offset="354">Abonamente</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="serviciu" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.63" offset="365">servicii</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.64" offset="374">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="telefonie" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.65" offset="377">telefonie</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="consum" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.66" offset="387">Consum</W>
+    <W LEMMA="/" MSD="SLASH" id="5.67" offset="393">/</W>
+    <W Case="direct" Gender="feminine" LEMMA="alt" MSD="Di3fpr" Number="plural" POS="DETERMINER" Person="third" Type="indefinite" id="5.68" offset="394">Alte</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="serviciu" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.69" offset="399">servicii</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="convorbire" MSD="Npfpoy" Number="plural" POS="NOUN" Type="proper" id="5.70" offset="408">Convorbiri</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="convorbire" MSD="Npfsoy" Number="singular" POS="NOUN" Type="proper" id="5.71" offset="419">Convorbiri</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:include(tranzitiv)" Gender="feminine" LEMMA="inclus" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="5.72" offset="430">incluse</W>
+    <W LEMMA="în" MSD="Sp" POS="ADPOSITION" id="5.73" offset="438">in</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="abonament" MSD="Ncmsrn" Number="singular" POS="NOUN" Type="common" id="5.74" offset="441">abonament</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="reducere" MSD="Npfpry" Number="plural" POS="NOUN" Type="proper" id="5.75" offset="451">Reduceri</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="total" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="5.76" offset="460">Total</W>
+    <W EXTRA="tranzitiv" LEMMA="factura" MSD="Vmis3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="past" Type="predicative" id="5.77" offset="466">factura</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="curentā" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="5.78" offset="474">curentā</W>
+    <W EXTRA="NotInDict" LEMMA="fārā" MSD="Sp" POS="ADPOSITION" id="5.79" offset="482">fārā</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="feminine" LEMMA="TVA" MSD="Npfpon" Number="plural" POS="NOUN" Type="proper" id="5.80" offset="487">TVA</W>
+    <W Case="direct" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="TVA" MSD="Npmpry" Number="plural" POS="NOUN" Type="proper" id="5.81" offset="491">TVA</W>
+    <W EXTRA="NotInDict" LEMMA="24" MSD="M" POS="NUMERAL" id="5.82" offset="495">24</W>
+    <W LEMMA="%" MSD="PERCENT" id="5.83" offset="497">%</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="total" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="5.84" offset="499">Total</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="factură" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="5.85" offset="505">factura</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="curent" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="5.86" offset="513">curenta</W>
+    <W Case="oblique" Definiteness="yes" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="sold" MSD="Npmsoy" Number="singular" POS="NOUN" Type="proper" id="5.87" offset="521">Sold</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="precedent" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="5.88" offset="526">precedent</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="plati" MSD="Npmprn" Number="plural" POS="NOUN" Type="proper" id="5.89" offset="536">Plati</W>
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:efectua(tranzitiv)" Gender="feminine" LEMMA="efectuat" MSD="Afpfprn" Number="plural" POS="ADJECTIVE" id="5.90" offset="542">efectuate</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="total" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.91" offset="552">Total</W>
+    <W LEMMA="de" MSD="Sp" POS="ADPOSITION" id="5.92" offset="558">de</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="plat" MSD="Afpfsrn" Number="singular" POS="ADJECTIVE" id="5.93" offset="561">plată</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="pană" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.94" offset="567">pană</W>
+    <W LEMMA="la" MSD="Sp" POS="ADPOSITION" id="5.95" offset="572">la</W>
+    <W EXTRA="NotInDict" LEMMA="14.02.2011" MSD="M" POS="NUMERAL" id="5.96" offset="575">14.02.2011</W>
+    <W EXTRA="NotInDict" LEMMA="0,35" MSD="Sp" POS="ADPOSITION" id="5.97" offset="586">0,35</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="-0,35" MSD="Afpfsry" Number="singular" POS="ADJECTIVE" id="5.98" offset="591">-0,35</W>
+    <W EXTRA="NotInDict" LEMMA="-8,58" MSD="Vmip1p" Mood="indicative" Number="plural" POS="VERB" Person="first" Tense="present" Type="predicative" id="5.99" offset="597">-8,58</W>
+    <W EXTRA="NotInDict" LEMMA="24" MSD="M" POS="NUMERAL" id="5.100" offset="603">24</W>
+    <W LEMMA="," MSD="COMMA" id="5.101" offset="605">,</W>
+    <W EXTRA="NotInDict" LEMMA="88" MSD="M" POS="NUMERAL" id="5.102" offset="607">88</W>
+    <W EXTRA="NotInDict" LEMMA="5,97" MSD="M" POS="NUMERAL" id="5.103" offset="610">5,97</W>
+    <W EXTRA="NotInDict" LEMMA="30" MSD="M" POS="NUMERAL" id="5.104" offset="615">30</W>
+    <W LEMMA="," MSD="COMMA" id="5.105" offset="617">,</W>
+    <W EXTRA="NotInDict" LEMMA="85" MSD="M" POS="NUMERAL" id="5.106" offset="619">85</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="30,91" MSD="Ncfprn" Number="plural" POS="NOUN" Type="common" id="5.107" offset="622">30,91</W>
+    <W Case="oblique" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="-31,00" MSD="Npfpon" Number="plural" POS="NOUN" Type="proper" id="5.108" offset="628">-31,00</W>
+    <W EXTRA="NotInDict" LEMMA="30,76" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="5.109" offset="635">30,76</W>
+    <W EXTRA="NotInDict" LEMMA="87686" MSD="M" POS="NUMERAL" id="5.110" offset="641">87686</W>
+    <W Case="direct" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="important" MSD="Npmsrn" Number="singular" POS="NOUN" Type="proper" id="5.111" offset="647">Important</W>
+    <W LEMMA="!" MSD="EXCL" id="5.112" offset="656">!</W>
+    <W EXTRA="NotInDict" LEMMA="42466001402143023227524200000000307614022011" MSD="M" POS="NUMERAL" id="5.113" offset="658">42466001402143023227524200000000307614022011</W>
+    <W EXTRA="NotInDict" LEMMA="1_3" MSD="M" POS="NUMERAL" id="5.114" offset="703">1_3</W>
+    <W Case="oblique" Definiteness="no" EXTRA="PropperNameCaseOverride" Gender="masculine" LEMMA="Adopta" MSD="Npmpon" Number="plural" POS="NOUN" Type="proper" id="5.115" offset="707">Adopta</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="o9atitudine" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="5.116" offset="714">o9atitudine</W>
+    <W LEMMA="," MSD="COMMA" id="5.117" offset="725">,</W>
+    <W EXTRA="tranzitiv" LEMMA="cere" MSD="Vmip3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="present" Type="predicative" id="5.118" offset="727">cere</W>
+    <W Case="direct" Definiteness="yes" Gender="masculine" LEMMA="bon" MSD="Ncmsry" Number="singular" POS="NOUN" Type="common" id="5.119" offset="732">bonul</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="fiscal" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="5.120" offset="738">fiscal</W>
+    <W LEMMA="!" MSD="EXCL" id="5.121" offset="744">!</W>
+  </S>
+  <S id="6" offset="1151">
+    <W LEMMA="dacă" MSD="Cs" POS="CONJUNCTION" id="6.1" offset="0">Daca</W>
+    <W EXTRA="tranzitiv" LEMMA="vrea" MSD="Vmip2s" Mood="indicative" Number="singular" POS="VERB" Person="second" Tense="present" Type="predicative" id="6.2" offset="5">vrei</W>
+    <W LEMMA="să" MSD="Qs" POS="PARTICLE" Type="conjunctive" id="6.3" offset="10">sa</W>
+    <W EXTRA="tranzitiv" LEMMA="lua" MSD="Vmsp2s" Mood="conjunctive" Number="singular" POS="VERB" Person="second" Tense="present" Type="predicative" id="6.4" offset="13">iei</W>
+    <W Case="direct" Definiteness="no" Gender="feminine" LEMMA="atitudine" MSD="Ncfsrn" Number="singular" POS="NOUN" Type="common" id="6.5" offset="17">atitudine</W>
+    <W LEMMA="," MSD="COMMA" id="6.6" offset="26">,</W>
+    <W EXTRA="intranzitiv" LEMMA="intra" MSD="Vmis3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="past" Type="predicative" id="6.7" offset="28">intra</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="6.8" offset="34">pe</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="masculine" LEMMA="www.protectia-consumatorilor.ro." MSD="Ncmprn" Number="plural" POS="NOUN" Type="common" id="6.9" offset="37">www.protectia-consumatorilor.ro.</W>
+  </S>
+  <S id="7" offset="1221">
+    <W EXTRA="intranzitiv" LEMMA="intra" MSD="Vmis3s" Mood="indicative" Number="singular" POS="VERB" Person="third" Tense="past" Type="predicative" id="7.1" offset="0">Intra</W>
+    <W LEMMA="pe" MSD="Sp" POS="ADPOSITION" id="7.2" offset="6">pe</W>
+    <W Case="oblique" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="www.romtelecom.ro" MSD="Npfpon" Number="plural" POS="NOUN" Type="proper" id="7.3" offset="9">www.romtelecom.ro</W>
+    <W LEMMA="," MSD="COMMA" id="7.4" offset="26">,</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="secțiune" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="7.5" offset="28">sectiunea</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="feminine" LEMMA="My" MSD="Npfsry" Number="singular" POS="NOUN" Type="proper" id="7.6" offset="38">My</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="Account" MSD="Npfprn" Number="plural" POS="NOUN" Type="proper" id="7.7" offset="41">Account</W>
+    <W LEMMA="," MSD="COMMA" id="7.8" offset="48">,</W>
+    <W LEMMA="și" MSD="Cc" POS="CONJUNCTION" Type="coordinating" id="7.9" offset="50">si</W>
+    <W EXTRA="tranzitiv" LEMMA="descărca" MSD="Vmip3p" Mood="indicative" Number="plural" POS="VERB" Person="third" Tense="present" Type="predicative" id="7.10" offset="53">descarca</W>
+    <W Case="direct" Definiteness="no" Gender="masculine" LEMMA="gratuit" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="7.11" offset="62">gratuit</W>
+    <W Case="direct" Definiteness="yes" Gender="feminine" LEMMA="copie" MSD="Ncfsry" Number="singular" POS="NOUN" Type="common" id="7.12" offset="70">copia</W>
+    <W Case="oblique" Gender="feminine" LEMMA="acest" MSD="Dd3fso---e" Number="singular" POS="DETERMINER" Person="third" Positioning="prenominal" Type="demonstrative" id="7.13" offset="76">acestei</W>
+    <W Case="oblique" Definiteness="no" Gender="feminine" LEMMA="factură" MSD="Ncfson" Number="singular" POS="NOUN" Type="common" id="7.14" offset="84">facturi</W>
+    <W LEMMA="!" MSD="EXCL" id="7.15" offset="91">!</W>
+  </S>
+  <S id="8" offset="1314">
+    <W Case="direct" Definiteness="no" EXTRA="ParticipleLemma:aproba(tranzitiv)" Gender="masculine" LEMMA="aprobat" MSD="Afpmsrn" Number="singular" POS="ADJECTIVE" id="8.1" offset="0">Aprobat</W>
+    <W LEMMA="prin" MSD="Sp" POS="ADPOSITION" id="8.2" offset="8">prin</W>
+    <W Case="direct" Definiteness="no" EXTRA="NotInDict" Gender="feminine" LEMMA="OMF" MSD="Npfsrn" Number="singular" POS="NOUN" Type="proper" id="8.3" offset="13">OMF</W>
+    <W EXTRA="NotInDict" LEMMA="701" MSD="M" POS="NUMERAL" id="8.4" offset="17">701</W>
+    <W LEMMA="/" MSD="SLASH" id="8.5" offset="20">/</W>
+    <W EXTRA="NotInDict" LEMMA="1998" MSD="M" POS="NUMERAL" id="8.6" offset="21">1998</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="MC" MSD="Npmsry" Number="singular" POS="NOUN" Type="proper" id="8.7" offset="26">MC</W>
+    <W EXTRA="NotInDict" LEMMA="14" MSD="M" POS="NUMERAL" id="8.8" offset="29">14</W>
+    <W EXTRA="NotInDict" LEMMA="-4" MSD="M" POS="NUMERAL" id="8.9" offset="31">-4</W>
+    <W EXTRA="NotInDict" LEMMA="-10" MSD="M" POS="NUMERAL" id="8.10" offset="33">-10</W>
+    <W LEMMA="/" MSD="SLASH" id="8.11" offset="36">/</W>
+    <W Case="direct" Definiteness="yes" EXTRA="NotInDict" Gender="masculine" LEMMA="A2" MSD="Npmsry" Number="singular" POS="NOUN" Type="proper" id="8.12" offset="37">A2</W>
+  </S>
+</POS_Output>
