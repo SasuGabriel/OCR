@@ -35,4 +35,4 @@ nrfacturii=re.findall("Nr. Facturii: ([0-9]{8})|Nr. factură: ([0-9]{13})", text
 punctdelucru=re.findall("PUNCT DE LUCRU: (.*?) CHITANTA", text)
 rambursla=re.findall("ramburs la ([A-Z]+ [0-9]+)", text)
 clientulexpeditor=re.findall("(clientul .*?) Tiparit",text)
-amprimitdela=re.findall("Am primit de la +: (.*?) CIF", text)
+amprimitdela=re.findall("Am primit de la +: (.*?) CIF|Am primit de la +: (.*?) Adresa", text)
