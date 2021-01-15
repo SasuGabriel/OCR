@@ -62,6 +62,7 @@ punctdelucru=re.findall("PUNCT DE LUCRU: (.*?) CHITANTA", text)
 rambursla=re.findall("ramburs la ([A-Z]+ [0-9]+)", text)
 clientulexpeditor=re.findall("(clientul .*?) Tiparit",text)
 amprimitdela=re.findall("Am primit de la +: (.*?) CIF|Am primit de la +: (.*?) Adresa", text)
+CI=re.findall("[A-Z]{2}[0-9]{8}", text)
 
 from prettytable import PrettyTable
 camp=['CIF','furnizor','codclient','codfacturare','datafacturare','duedate','furnizor','nrfacturii','numepersoana','perioadafacturare',
