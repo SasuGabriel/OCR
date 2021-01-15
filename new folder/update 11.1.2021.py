@@ -10,7 +10,7 @@ with open('D:/BusuiocI/Desktop/134_4.json', encoding='utf-8') as f:
 text=data['fullTextAnnotation']['text'].replace('\n',' ')
 
 #READ FROM PDF
-#Download Poppler from http://blog.alivate.com.au/poppler-windows/
+#Download Poppler Latest binary from http://blog.alivate.com.au/poppler-windows/
 from pdf2image import convert_from_path
 images = convert_from_path("D:/BusuiocI/Documents/Bibliografie/Anul 2, Sem I/Statistical processing of textual data/Baza de date Analiza text/Corpus-master-Onofrei Mihaela/Corpus-master/Pdf/factura_clasica.pdf", 500,poppler_path=r'D:/BusuiocI/Downloads/poppler-0.68.0_x86/poppler-0.68.0/bin')
 for i, image in enumerate(images):
