@@ -32,7 +32,7 @@ text=text+text2
 
 #REGEX UNIVERSAL
 import re
-telephone=re.findall("Număr telefon/cont: (0\d{3}\d{3}\d{3}\s)| (0\d{3}\d{3}\d{3}\s)|(0\d{4} \d{2} \d{2} \d{2}\s)| (0\d{9})\s|Voce: ([0-9]{10})", text)
+telephone=re.findall("Număr telefon/cont: (0\d{9}\s)| (0\d{9}\s)|(0\d{4} \d{2} \d{2} \d{2}\s)| (0\d{9})\s|Voce: ([0-9]{10})", text)
 postalcodesender=re.findall("\s\d{6}\s|\s\d{6}\,", text)
 CIF=re.findall("\s[A-Z][A-Z]\d{4,10}\s|\s[A-Z][A-Z]\d{6,10}\s|\sR\d{9}\s|\sR\d{9}|Cod de inregistrare fiscala: +([A-z0-9]{9})|CIF:\s([A-Z][A-Z]\d{4,10})", text)
 CIF
