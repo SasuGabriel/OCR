@@ -1,0 +1,17 @@
+camp,valoare
+CIF,"[('', '', 'R013838336', '', '', '')]"
+furnizor,"[('', '', '', '', 'S.C FAN COURIER EXPRESS SRL', '')]"
+codclient,[]
+codfacturare,[]
+datafacturare,[]
+furnizor,"[('', '', '', '', 'S.C FAN COURIER EXPRESS SRL', '')]"
+nrfacturii,[]
+numepersoana,"[('COURIER', '', 'EXPRESS'), ('CHITANTA', '', 'RAMBURS'), ('CONT', '', 'COLECTOR')]"
+perioadafacturare,[]
+totalplata,"[('', '111.89', '', '', '', '', '')]"
+seria,"[('', '', '', 'AS-68', '', '', '', '', '')]"
+adresafurnizor,"[('', ' Sos. Fabrica de Glucoza nr.11C, sector 2, Bucuresti,  Cod Postal 020331 ', '')]"
+punctdelucru,"[' lasi, Calea Chisinaului nr.2A ']"
+rambursla,['AWB 2400071793132']
+clientulexpeditor,['clientul expeditor SPORTISIMO S.R.0 ']
+amprimitdela,"[('Carmen Darie ', '')]"
