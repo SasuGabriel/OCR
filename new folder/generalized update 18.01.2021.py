@@ -46,6 +46,29 @@ text=text.replace('\n\n',' ')
 from unidecode import unidecode
 unidecode(text)
 
+#preprocesare imagine
+
+def gray(img):
+    img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    return img
+
+def blur(img):
+    img_blur=cv2.GaussianBlur(img,(1,1),0)
+    cv2.imwrite(r"./preprocess/img_blur.png",img)
+    return img_blur
+
+def threshhold(img):
+    img=cv2.threshold(img,100,255,cv2.THRESH_OTSU|cv2.THRESH_BINARY)[1]
+    cv2.imwrite(r"./preprocess/img_threshold.png",img)
+    return img
+norm_img = np.zeros((img.shape[0], img.shape[1]))
+img = cv2.normalize(img, norm_img, 0, 255, cv2.NORM_MINMAX)
+img = cv2.threshold(img, 100, 255, cv2.THRESH_BINARY)[1]
+img = cv2.GaussianBlur(img, (1, 1), 0)
+
+text= pytesseract.image_to_string(img,config=custom_config)
+text=text.replace('\n\n',' ')
+
 #REGEX UNIVERSAL
 import re
 #telephonecorect=re.findall("Telefon\:? (0\d{9}\,?\s)|\s(0\d{9}\,?\s)|(0\d{3} \d{2} \d{2} \d{2}\,?\s)| (0\d{9}): ([0-9]{10})|(0\d{3} \d{3} \d{3})\,?\s|\+[0-9]{2}\s[0-9]{2}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}", text)
