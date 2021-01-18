@@ -94,69 +94,64 @@ seriabuna = [string for string in elements if string != ""]
 numepersoana=re.findall("([A-Z\-]{4,}\s+[A-Z\-]{0,}\s?[A-Z\-]{5,})\s|([A-Z]{1}[a-z]{2,}\s[A-Z][a-z]{2,})\s", text)
 elements=[element for tupl in numepersoana for element in tupl]
 numepersoana = [string for string in elements if string != ""]
-numepersoana
 
 perioadafacturare=re.findall("[0-9]{2}\.[0-9]{2}\.[0-9]{4}\-[0-9]{2}\.[0-9]{2}\.[0-9]{4}|[0-9]{2}\.[0-9]{2}\.[0-9]{2}\s\-\s[0-9]{2}\.[0-9]{2}\.[0-9]{2}|[0-9]{2}\.[0-9]{2}\.[0-9]{2}\-[0-9]{2}\.[0-9]{2}\.[0-9]{2}|[0-9]{2}\.[0-9]{2}\.[0-9]{4}\s\-\s[0-9]{2}\.[0-9]{2}\.[0-9]{4}", text)
-perioadafacturare
 
 datafacturare=re.findall("\Data facturării\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})\s|Data\:?\s([0-9]{4}\-[0-9]{2}\-[0-9]{2})\s|Data emiterii\:? +([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Data facturii\:? ([0-9]{2}\.[0-9]{2}\.[0-9]{4})|din\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})\s|Data facturii\:? ([0-9]{2}\/[0-9]{2}\/[0-9]{4})\s|din data de\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Data\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Data emiterii\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Data avizului\:?\s([0-9]{2}\/[0-9]{2}\/[0-9]{4})", text)
 elements=[element for tupl in datafacturare for element in tupl]
 datafacturare = [string for string in elements if string != ""]
-datafacturare
 
 datascadenta=re.findall("Total de plată pană la\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Scadent\:?\s([0-9]{4}\-[0-9]{2}\-[0-9]{2})\s|până la data de\:? ([0-9]{2}\.[0-9]{2}\.[0-9]{4})|scadenta\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})\s|Data scadenţei\:? ([0-9]{2}\/[0-9]{2}\/[0-9]{4})|Scadenta\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})\s|Data scadentă\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Ultima zi de plată\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Ultima zi de plata\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})|Data scadentei\:?\s([0-9]{2}\.[0-9]{2}\.[0-9]{4})", text)
 elements=[element for tupl in datascadenta for element in tupl]
 datascadenta = [string for string in elements if string != ""]
 datascadenta
-
+if datascadenta==[]:
+    datascadenta=re.findall("\s([0-9]{2}\.[0-9]{1}[1-9]{0,1}\.[0-9]{4})", text)
+    datascadenta=pd.to_datetime(datascadenta, format="%d.%m.%Y")
+    datascadenta=datascadenta.max()
+    
 sumedebani=re.findall("(\-?\d+,\d{2})\s|\s(\-?\d+\.\d{2})\s|Vă rugăm să achitaţi suma de\:?\s(\-?\d+,\d{2})\s|TOTAL DE PLATA .*? (\-?\d+.\d{2})\s|(\-?\d+\.\d{3},\d{2})\s|(\-?\d+?\.\d{3}\.\d{3}\,\d{2})|\s(\-?[0-9]{1,}\.[0-9]{2})\s", text)
 elements=[element for tupl in sumedebani for element in tupl]
 sumedebani = [string for string in elements if string != ""]
-sumedebani
-j=[]
-for i in sumedebani:
-    i=i.replace('.','')
-    i=i.replace(',','.')
-    j.append(float(i))
-totalplata=max(j)
+#j=[]
+#for i in sumedebani:
+#    i=i.replace('.','')
+#    i=i.replace(',','.')
+#    j.append(float(i))
+#totalplata=max(j)
 
 IBAN=re.findall("([A-Z]{2}[0-9]{2}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4}\s[a-zA-Z0-9]{4})\s|\s([A-Z0-9]{24})\s|\s([A-Z0-9]{11}\s[0-9]{13})|([A-Z]{2}[0-9]{2}[a-zA-Z0-9]{9}\s[a-zA-Z0-9]{13})", text)
 elements=[element for tupl in IBAN for element in tupl]
 IBAN = [string for string in elements if string != ""]
-IBAN
 
 codfacturare=re.findall("\s([0-9]{14})\s",text)
 
 furnizor=re.findall("(.{,15}\sS\.A\.)|FURNIZOR\:? (.*? SRL)|(FIRMA .*?) Cumparator|(.{,15}\sSA)|(.{,15}\sSRL)|Furnizor Client(.*? SRL)|Furnizor\:? (.*? SA)|Furnizor\:? (.*? SRL)|Furnizor\:?\s(.*? S\.A\.)|Furnizor\:?\s(.*? S\.R\.L\.)|([a-z\-]{3,}\-[a-z\-]{3,}\-[a-z\-]{3,})|([A-Z]{1}\.[A-Z]{2})\s|([A-Z\-]{1,}\.[A-Z\-]{2,}\s[A-z\-]{3,}\s[A-z\-]{3,})|([A-Z]{2,}\sS\.A\.)|([A-Z\-]{3,}\s[&]\s[A-Z\-]{3,})|(.{,15}\sPFA)", text)
+elements=[element for tupl in furnizor for element in tupl]
+furnizor = [string for string in elements if string != ""]
 furnizor2=re.findall("(.{,20}\sS\.A\.)\s|(.{,20}\sSA)\s|(.{,20}\sSRL)\s|(.{,20}\sPFA)\s|(.{,20}\sS\.R\.L\.)\s", text)
 elements=[element for tupl in furnizor2 for element in tupl]
 furnizor2 = [string for string in elements if string != ""]
-furnizor2
 
 adresafurnizor=re.findall("(Oras:.*?)Cui|SRL (.*?) Capital social|S.A. (.*?) FACTURA", text)
 elements=[element for tupl in adresafurnizor for element in tupl]
 adresafurnizor = [string for string in elements if string != ""]
-adresafurnizor
 
 adresa=re.findall("(Str\..+Ap\.\s[0-9]{1,}\s)|Adresa: (.*?)suma de|([A-Z]+\.[A-Z]+ NR.[0-9]{2,4}[A-Z])|Str.(.*?)|Adresa\:?\s(.*?ap.\s[0-9]{1,})|Adresa: (.*?)suma de|([A-Z]+\.[A-Z]+ NR.[0-9]{2,4}[A-Z])", text)
 elements=[element for tupl in adresa for element in tupl]
 adresa = [string for string in elements if string != ""]
-adresa
 
-produse=re.findall("Produse si servicii facturate (.*?) Suma facturata \(fara TVA\)|Denumire\/Produs\/Servicii (.*?)\s\d+\.\d{2}\s|[0-9]{1,}\,[0-9]{2}\s[0-9]{1,}\,[0-9]{2}(.*?)[0-9]{1,}\,[0-9]{2}\s[0-9]{1,}\,[0-9]{2}|[0-9]{1,}\,?[0-9]{0,}(.*?)[0-9]{1,}\,[0-9]{2}|[0-9]{1,}\s(.*?)[0-9]{1,}", text)
-elements=[element for tupl in produse for element in tupl]
-produse = [string for string in elements if string != ""]
-produse
+#produse=re.findall("Produse si servicii facturate (.*?) Suma facturata \(fara TVA\)|Denumire\/Produs\/Servicii (.*?)\s\d+\.\d{2}\s|[0-9]{1,}\,[0-9]{2}\s[0-9]{1,}\,[0-9]{2}(.*?)[0-9]{1,}\,[0-9]{2}\s[0-9]{1,}\,[0-9]{2}|[0-9]{1,}\,?[0-9]{0,}(.*?)[0-9]{1,}\,[0-9]{2}|[0-9]{1,}\s(.*?)[0-9]{1,}", text)
+#elements=[element for tupl in produse for element in tupl]
+#produse = [string for string in elements if string != ""]
 
 codclient=re.findall("COD CLIENT\:? ([0-9]{7,})|Cod abonat\:? ([0-9]{10})|Cod client\:? ([0-9]{8})|Cod client\:? ([0-9]{7,})\s", text)
 elements=[element for tupl in codclient for element in tupl]
 codclient = [string for string in elements if string != ""]
-codclient
 
 nrfacturii=re.findall("Nr. Facturii\:? ([0-9]{8})|Nr. factură\:? ([0-9]{10,})|Numar factura\:? ([A-Z0-9]{6} [0-9]{6})|Nr. ([0-9]{8})|\s([0-9]{11})\s|Număr factură\:? ([0-9]{6,})|\s([A-Z]{3,}[0-9]{8,})|nr.\s([0-9]{8,})", text)
 elements=[element for tupl in nrfacturii for element in tupl]
 nrfacturii = [string for string in elements if string != ""]
-nrfacturii
 
 punctdelucru=re.findall("PUNCT DE LUCRU: (.*?) CHITANTA", text)
 rambursla=re.findall("ramburs la ([A-Z]+ [0-9]+)", text)
@@ -165,7 +160,6 @@ clientulexpeditor=re.findall("(clientul .*?) Tiparit",text)
 amprimitdela=re.findall("Am primit de la +: (.*?) CIF|Am primit de la +: (.*?) Adresa", text)
 elements=[element for tupl in amprimitdela for element in tupl]
 amprimitdela = [string for string in elements if string != ""]
-amprimitdela
 
 CI=re.findall("([A-Z]{2}[0-9]{8})\s", text)
 
@@ -294,15 +288,15 @@ show_entsall(doc)
 
 #PRETTYTABLE
 from prettytable import PrettyTable
-camp=['telefon','postalcode','CIF','cartedeidentitate','seria','numepersoana','perioadafacturare',
-         'datafacturare', 'datascadenta', 'sumedebani','IBAN', 'codfacturare', 'furnizor', 'adresafurnizor', 'adresa', 'produse',
-         'codclient', 'nrfacturii', 'punctdelucru', 'rambursla', 'clientulexpeditor', 'amprimitdela', 'CI']
+camp=['telefon','postal code','CIF','carte de identitate','seria','nume persoana','perioada facturare',
+         'data facturare', 'data scadenta', 'sume de bani','IBAN', 'cod facturare', 'furnizor', 'furnizor','adresa furnizor', 'adresa recipient',
+         'cod client', 'nr facturii', 'punct de lucru', 'ramburs la', 'clientul expeditor', 'am primit de la', 'CI','produse']
 valoare=[telefon,postalcode,CIF,cartedeidentitate,seriabuna,numepersoana,perioadafacturare,
-         datafacturare, datascadenta, sumedebani,IBAN, codfacturare, furnizor, adresafurnizor, adresa, produse,
-         codclient, nrfacturii, punctdelucru, rambursla, clientulexpeditor, amprimitdela, CI]
+         datafacturare, datascadenta, sumedebani,IBAN, codfacturare, furnizor, furnizor2, adresafurnizor, adresa,
+         codclient, nrfacturii, punctdelucru, rambursla, clientulexpeditor, amprimitdela, CI, produse]
 table=PrettyTable(['camp','valoare'])
 for x in range(0,len(camp)):
-    table.add_row([camp[x],valoare[x]])
+  table.add_row([camp[x],valoare[x]])
 print(table)
 
 #EXPORT TABLE TO CSV
