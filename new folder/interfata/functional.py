@@ -13,7 +13,9 @@ from  PIL import  Image
 import re
 from unidecode import unidecode
 import csv
-import fancourierdoc 
+from pdf2image import convert_from_path
+import fancourierdoc1
+
 wildcard = "Python source (*.py)|*.py|" \
             "All files (*.*)|*.*"
 class Input_Panel(wx.Panel):
@@ -40,9 +42,7 @@ class Input_Panel(wx.Panel):
         self.currentDirectory = os.getcwd()
 
     def onOpenFile(self, event):
-        """
-        Create and show the Open FileDialog
-        """
+        #Create and show the Open FileDialog
         dlg = wx.FileDialog(
             self, message="Choose a file",
             defaultDir=self.currentDirectory, 
@@ -55,13 +55,23 @@ class Input_Panel(wx.Panel):
             print("You chose the following file(s):")
             for path in paths:
                 print(path)
-                image = wx.Image(path, wx.BITMAP_TYPE_ANY)
-                image.Rescale(300,450)
-                self.imageBitmap = wx.StaticBitmap(self, wx.ID_ANY, wx.BitmapFromImage(image))
-                self.imageBitmap.Center()
+                if path.endswith('.pdf'):
+                    pages = convert_from_path(path, poppler_path=r"C:/Users/pc/Desktop/PrelucrareaStatisticaaDatelorText/proiect/try/poppler-0.68.0/bin") 
+                    #Saving pdf page in jpeg format
+                    for page in pages:
+                        path="C:/Users/pc/Desktop/PrelucrareaStatisticaaDatelorText/proiect/try/output.jpg"
+                        page.save(path, "JPEG")
+                    image = wx.Image(path, wx.BITMAP_TYPE_ANY)
+                    image.Rescale(300,450)
+                    self.imageBitmap = wx.StaticBitmap(self, wx.ID_ANY, wx.BitmapFromImage(image))
+                    self.imageBitmap.Center()
+                else:
+                    image = wx.Image(path, wx.BITMAP_TYPE_ANY)
+                    image.Rescale(300,450)
+                    self.imageBitmap = wx.StaticBitmap(self, wx.ID_ANY, wx.BitmapFromImage(image))
+                    self.imageBitmap.Center()
         dlg.Destroy()
         
-    
 
 class Output_Panel(wx.Panel):
     def __init__(self, parent):
@@ -100,12 +110,12 @@ class Output_Panel(wx.Panel):
         if dlg.ShowModal() == wx.ID_OK:
             path = dlg.GetPath()
             print ("You chose the following filename: %s" % path)
-            self.tabel=fancourierdoc.test1(path)
+            self.tabel=fancourierdoc1.test1(path)
             return self.tabel
         dlg.Destroy()
     def onDownloadFile(self, event):
         try:
-            fancourierdoc.test2(self.tabel)
+            fancourierdoc1.test2(self.tabel)
             path_image="C:/Users/pc/Desktop/PrelucrareaStatisticaaDatelorText/proiect/try/complete-icon.jpg"
             image = wx.Image(path_image, wx.BITMAP_TYPE_ANY)
             image.Rescale(240,250)
