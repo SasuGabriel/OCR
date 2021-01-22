@@ -59,12 +59,12 @@ class Input_Panel(wx.Panel):
                     pages = convert_from_path(path, poppler_path=r"D:/BusuiocI/Downloads/poppler-0.68.0_x86/poppler-0.68.0/bin") 
                     #Saving pdf page in jpeg format
                     for page in pages:
-                        path="D:/BusuiocI/Desktop/output.jpg"
+                        path="D:/BusuiocI/Desktop/output"+str(pages.index(page))+".jpg"
                         page.save(path, "JPEG")
-                    image = wx.Image(path, wx.BITMAP_TYPE_ANY)
-                    image.Rescale(300,450)
-                    self.imageBitmap = wx.StaticBitmap(self, wx.ID_ANY, wx.BitmapFromImage(image))
-                    self.imageBitmap.Center()
+                        image = wx.Image(path, wx.BITMAP_TYPE_ANY)
+                        image.Rescale(300,450)
+                        self.imageBitmap = wx.StaticBitmap(self, wx.ID_ANY, wx.BitmapFromImage(image))
+                        self.imageBitmap.Center()
                 else:
                     image = wx.Image(path, wx.BITMAP_TYPE_ANY)
                     image.Rescale(300,450)
