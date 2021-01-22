@@ -11,8 +11,6 @@ import csv
 from pdf2image import convert_from_path
 import spacy
 
-
-
 def gray(img):
     img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     return img
@@ -41,10 +39,11 @@ def test1(path):
     if path.endswith('.pdf'):
             pages = convert_from_path(path, poppler_path=r"D:/BusuiocI/Downloads/poppler-0.68.0_x86/poppler-0.68.0/bin") 
             #Saving pdf page in jpeg format
+            text=[]
             for page in pages:
-                  path="D:/BusuiocI/Desktop/output.jpg"
+                  path="D:/BusuiocI/Desktop/output"+str(pages.index(page))+".jpg"
                   page.save(path, "JPEG")
-                  img=cv2.imread(path)
+                  img=cv2.imread("D:/BusuiocI/Desktop/output"+str(pages.index(page))+".jpg")
                   img=gray(img)
                   img=blur(img)
                   img=threshhold(img)
@@ -53,11 +52,12 @@ def test1(path):
                   img = cv2.threshold(img, 100, 255, cv2.THRESH_BINARY)[1]
                   img = cv2.GaussianBlur(img, (1, 1), 0)
                   custom_config = r'--oem 3 --psm 12'
-                  text=pytesseract.image_to_string(img, config=custom_config, lang="ron")
-                  text=text.replace('\n\n',' ')
-                  text=text.replace('\n',' ')
-                  nlp = spacy.load('ro_core_news_lg') #sm, lg
-                  doc=nlp(text)
+                  text.append(pytesseract.image_to_string(img, config=custom_config, lang="ron"))
+            text=' '.join(text)
+            text=text.replace('\n\n',' ')
+            text=text.replace('\n',' ')
+            nlp = spacy.load('ro_core_news_lg') #sm, lg
+            doc=nlp(text)
                   
     else:
           img=cv2.imread(path)
